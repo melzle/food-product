@@ -1,24 +1,14 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Food Product is an application that displays a list of food products and users can perform several actions on each existing product. Some of the features available are as follows:
 
-Things you may want to cover:
+* Users can add new products by filling in complete product data
+* Users can view product details
+* Users can edit products
+* Users can delete products
 
-* Ruby version
+Additional Information
 
-* System dependencies
+* Ruby version : ruby 3.2.2
+* Start the web server using **rails server** and open localhost:3000
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
