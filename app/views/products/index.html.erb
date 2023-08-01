@@ -1,0 +1,39 @@
+<div class="container">
+<p style="color: green"><%= notice %></p>
+<div class="d-flex justify-content-between mb-4">
+  <h3>List of Products</h3>
+  <%= link_to "New product", new_product_path, class: "btn btn-success" %>
+</div>
+
+  <table class="table table-bordered">
+  <thead class="table-primary">
+    <tr>
+      <th>Name</th>
+      <th>Brand</th>
+      <th>Size</th>
+      <th>Categories</th>
+      <th>Ingredients</th>
+      <th>UPC</th>
+      <th>Image</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @products.each do |product| %>
+      <tr>
+        <td><%= product.name %></td>
+        <td><%= product.brand %></td>
+        <td><%= product.size %></td>
+        <td><%= product.categories %></td>
+        <td><%= product.ingredients %></td>
+        <td><%= product.upc %></td>
+        <td>
+          <%= image_tag(product.image, class: "image") %>
+        </td>
+        <td><%= link_to 'Show', product, data: { confirm: 'Are you sure?' }, class: "btn btn-dark" %></td>
+      <tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+
